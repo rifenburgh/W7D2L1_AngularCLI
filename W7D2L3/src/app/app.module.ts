@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { MyPropertyBindingComponent } from './my-property-binding/my-property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    MyPropertyBindingComponent
   ],
   imports: [
     BrowserModule,
