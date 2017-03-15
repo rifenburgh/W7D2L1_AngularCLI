@@ -1,1 +1,10 @@
 <h2>Welcome to the two-way-binding works Page</h2>
+
+<input [(ngModel)]="yourname" type="text" placeholder="Your Name Here">
+<textarea [(ngModel)]="commentText" placeholder="How great was it?"></textarea>
+
+<h4>Preview</h4>
+<div>
+  <h5>{{ yourname }} said:</h5>
+  <p>{{ commentText }} </p>
+</div>
