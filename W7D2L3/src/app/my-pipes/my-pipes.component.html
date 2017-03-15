@@ -1,5 +1,9 @@
 <h2>Welcome to the my-pipes Page</h2>
 
 <p>My name is {{ myName | uppercase }}.</p>
+<p>My name is {{ myName | capitalize }}.</p>
+
 <p>Pretty Date: {{ myDate | date:'yyyyMMMdd EEEE' | uppercase }}</p>
 <button (click)="fluxCapacitor()">Tomorrow Button</button>
+<input [(ngModel)]="yourname" type="text">
+<p> Hello, {{ yourname | capitalize }}. </p>
