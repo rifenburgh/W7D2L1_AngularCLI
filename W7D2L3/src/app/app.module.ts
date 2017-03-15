@@ -9,6 +9,7 @@ import { MyPropertyBindingComponent } from './my-property-binding/my-property-bi
 import { MyEventBindingComponent } from './my-event-binding/my-event-binding.component';
 import { MyMixedBindingComponent } from './my-mixed-binding/my-mixed-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { MyPipesComponent } from './my-pipes/my-pipes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     MyPropertyBindingComponent,
     MyEventBindingComponent,
     MyMixedBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    MyPipesComponent
   ],
   imports: [
     BrowserModule,
