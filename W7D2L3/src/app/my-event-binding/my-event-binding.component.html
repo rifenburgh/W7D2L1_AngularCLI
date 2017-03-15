@@ -1,5 +1,6 @@
 <h2>Welcome to the my-event-binding works Page</h2>
 
 
-<input (keyup)="onKey($event)" type="text">
-<p> {{ lastLetter }}</p>
+<input #theInput (keyup)="onKey($event, theInput.value)" type="text">
+<p> {{ lastLetter.key }}</p>
+<p> {{ currentText }}</p>
