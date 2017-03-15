@@ -1,0 +1,14 @@
+<h2>Welcome to the animals Page</h2>
+<ul>
+    <li *ngFor="let animal of animals, let i = index">
+        {{ i + 1 }} - {{ animal.name }}
+    </li>
+</ul>
+
+<button (click)="toggleBlack()">Toggle Black</button>
+<button (click)="toggleYellow()">Toggle Yellow</button>
+<button (click)="toggleBig()">Toggle Big</button>
+
+<section [ngClass]="{ black: isBlackBackground, yellow: isYellowText,  big: isLarge }">
+
+</section>
