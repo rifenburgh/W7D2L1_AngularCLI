@@ -13,5 +13,8 @@ export class MyPropertyBindingComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  changeImage() {
+    const randomNumber  = Math.floor((Math.random() * 10) + 200);
+    this.myImageSource  = `http://loremflickr.com/300/${randomNumber}/dog`;
+  }
 }
