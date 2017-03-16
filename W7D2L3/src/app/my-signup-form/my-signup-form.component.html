@@ -20,7 +20,9 @@
     <tr>
         <!-- The Error message will show once the user has started entering data into the field -->
         <td *ngIf="myUsername.errors && myUsername.dirty" class="error">Error:  </td>
-        <td *ngIf="myPassword.errors && myPassword.dirty" class="error">Error: 8 character minimum.</td>
     </tr>
   </table>
 </form>
+
+
+<td *ngIf="myPassword.errors && myPassword.dirty" class="error">Error: 8 character minimum.</td>
