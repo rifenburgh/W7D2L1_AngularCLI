@@ -1,0 +1,26 @@
+<h2>Welcome to the Signup Page</h2>
+
+<!-- This form will submit the values of this form (captured in myForm) to the function (submitMyForm) -->
+<form (ngSubmit)="submitMyForm(myForm)" #myForm="ngForm">
+  <table>
+    <tr>
+      <td> Username</td>
+      <td><input [(ngModel)]="username" type="text" name="username" placeholder="Username" required
+        #myUsername="ngModel" minlength="6"></td>
+    </tr>
+
+      <tr *ngIf="!myUsername.errors">
+        <td> Password</td>
+        <td>  <input [(ngModel)]="password" #myPassword="ngModel" type="password" name="password" placeholder="Swordfish" required></td>
+      </tr>
+    <tr>
+      <td></td>
+      <td>  <button type="submit">Sign Up</button></td>
+    </tr>
+    <tr>
+        <!-- The Error message will show once the user has started entering data into the field -->
+        <td *ngIf="myUsername.errors && myUsername.dirty" class="error">Error:  </td>
+        <td *ngIf="myPassword.errors && myPassword.dirty" class="error">Error: 8 character minimum.</td>
+    </tr>
+  </table>
+</form>

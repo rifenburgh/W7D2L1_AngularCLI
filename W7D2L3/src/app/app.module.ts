@@ -14,6 +14,7 @@ import { MyPipesComponent }           from './my-pipes/my-pipes.component';
 //Custom Capitalize Pipe
 import { CapitalizePipe }             from './pipes/capitalize.pipe';
 import { AnimalsComponent } from './animals/animals.component';
+import { MySignupFormComponent } from './my-signup-form/my-signup-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AnimalsComponent } from './animals/animals.component';
     MyPipesComponent,
     //Add Custom Capitalize Pipe
     CapitalizePipe,
-    AnimalsComponent
+    AnimalsComponent,
+    MySignupFormComponent
   ],
   imports: [
     BrowserModule,
